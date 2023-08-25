@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Golulafty</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<style>
+		.navbar{
+		
+			border: white solid 1px;
+			border-radius: 5px;
+			box-shadow: gray -0px 12px 6px;
+			justify-content: space-around;
+			overflow: auto;
+		}
+		.lst{
+			float: right;
+
+			font-size: 1.5rem;
+			display: flex;
+			margin-right: 20px;
+			margin-top: -70px ;
+			
+
+		}
+		.lst li{
+			 padding:9px;
+          
+			 font-family: 'Poppins', sans-serif;
+			 list-style: none;
+		}
+		.lafty{
+			 margin-top: 2px 0px;
+			 margin-left: 30px;
+			 font-size: 1.7rem;
+			 cursor: no-drop;
+			 
+			 font-family: 'Poppins', sans-serif;
+		}
+		.lst li a{
+			 text-decoration: none;
+			 padding: 12px ;
+		}
+ 		.singh{
+			color: red;
+		}
+		.form{
+			background-image: url("file:///C:/Users/pc/Desktop/practice.html/photo.jpg");
+		   background-size: cover;
+			 width: 300px;
+			 float: right;
+			 height: 400px;
+			
+			 box-shadow:  black 2px 2px 10px;
+			 margin-top: 30px;
+			 margin-left: 40px;
+			 border-radius: 19px;
+
+		}
+		.details{
+			margin-left:25%;
+			text-decoration: underline;
+
+		}
+		.button{
+			padding: 10px;
+			 margin-left: 50px;
+			 margin-top: 10px;
+		}
+		.intro{
+			width: 50vh;
+			height: 80vh;
+			box-shadow: gray 2px 2px 9px;
+			margin-top: 90vh;
+			
+			border-radius: 10px;
+
+
+		}
+		#alert-text{
+			height: 1px;
+			margin-top: -10px;
+			 color: red;
+			 margin-left: 30%;
+			 font-size:0.90rem;
+			 
+		}
+		#text-res{
+			 color: red;
+			 margin-left: 10%;
+			 font-size: .90rem;
+		}
+		#text{
+      border:white solid 1px;
+      box-shadow: gray 0px 0px 1px;
+		}
+		#video{
+			 margin-top: 20px;
+
+		}
+		.password-char{
+			margin-top: -15px;
+			margin-left: 70px;
+		}
+		.try{
+			 width: 2000px;
+
+		}
+		.footer{
+			
+			 border: black solid 1px;
+		}
+		.footer footer{
+			margin-left: 500px;
+		}
+		.footer footer a{
+			 text-decoration: none;
+
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<h3 class="lafty">SINGH<span class="singh"> FAMILY</span></h3>
+		<ul class="lst">
+			<li><a href="file:///C:/Users/pc/Desktop/practice.html/20230824_193929.mp4" style="color: black">About</a></li>
+			<li><a href="file:///C:/Users/pc/Desktop/practice.html/animation.html" style="color: red"> Home</a></li>
+			<li><a href="file:///C:/Users/pc/Desktop/practice.html/rena.html" style="color: blue">Calculator</a></li>
+		
+		</ul>
+	</nav>
+	
+	<!-- <iframe src="file:///C:/Users/pc/Desktop/practice.html/20230824_193929.mp4" id="video" allow="accelerometer; "></iframe>
+ -->
+	<div class="form">
+	
+	</div>
+	<p class="try">My name dharmendra .I blong Anupshahr(bulandshahr).
+I am graduated become in 2025 year.I developed this 
+website by(html,css,js).It site is a normal site because
+etc..?</p>
+		<div class="intro">
+			<form  action="#" method="post" onsubmit="return validate()">
+			<h1 class="details" >Your Details</h1>
+		<p style="margin-left: 20px;">
+			<label>Name</label>
+			<input type="text" name="" ; 
+			 placeholder="name....." id="text">
+			<p id="text-res"></p>
+			
+		</p>
+		<p style="margin-left: 20px;">
+			Gmail
+			<input type="gmail" name="" style="border:white solid 1px; 
+			box-shadow: gray 0px 0px 1px; margin-top: 10px;" placeholder="gmail ....."  onkeyup="Name(this.value)">
+			<p id="alert-text" ></p></p>
+			<p style="margin-left: 20px;">
+			Phone
+			<input type="0" name="" style="border:white solid 1px; 
+			box-shadow: gray 0px 0px 1px; margin-top: 10px;" placeholder="mobile n..." id="pnone">
+		</p>
+		<p style="margin-left: 20px;">
+			Password
+			<input type="Password" name="" id="password" style="border:white solid 1px; 
+			box-shadow: gray 0px 0px 1px; margin-top: 20px;" placeholder="password..." onkeyup="Pass(this.value)"  >
+			<p id="res" style="color: red"></p>
+		</p>
+		<div>
+			<p class="password-char">8 character </p>
+			<p class="password-char">1 uppercase character</p>
+			<p class="password-char">1 lowercase character</p>
+			<p class="password-char"> 1 spacial character</p>
+			<p class="password-char">1 number</p>
+			
+		</div>
+		<p class="button" >
+		<button onclick="Submit(this)">Submit</button>
+		<button onclick="pro(this)">Show password</button>
+	</p>
+</form></div>
+<div class="footer">
+<footer>
+	<p> <a href="/"></iframe>@gmal.com</a></p>
+	<p> <a href="https://www.instagram.com/golulafty/"><i class="fa-brands fa-instagram"></i> Instagram follow</a></p>
+	<p> <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></i> YouTube Subscribe</a></p>
+</footer></div>
+
+</body>
+<script>
+	let ispace=/\s/g;
+	let flag;
+	let text= document.getElementById('text').value;
+	let password =document.getElementById('password');
+	let res =document.getElementById('res');
+	let phone=document.getElementById('phone').value;
+	function pro(elem){
+		  let get = password.getAttribute('type');
+		 if (get==="password") {
+		 	password.setAttribute('type','text');
+		 	elem.innerText="Hide password";
+		 	
+
+		 }else{
+		 	password.setAttribute('type','password');
+		 	elem.innerText="Show password";
+
+		 }
+	}
+	   
+	    function Name(data){
+	    	let pattern=ispace.test(data);
+	    	if ( pattern) {
+	    		document.getElementById('alert-text').innerText="Please not space!";
+	    	
+	    	}else{
+	    		document.getElementById('alert-text').innerText=""; 
+	    		}
+
+	    }
+	    function Pass(data){
+	    	 let passchar = document.querySelectorAll('.password-char');
+	    	const lowerCase=new RegExp('(?=.*[a-z])');
+	    	const upperCase=new RegExp('(?=.*[A-Z])');
+	    	const number=new RegExp('(?=.*[0-9])');
+	    	const specialChar=new RegExp('(?=.*[!@#\$%\^&\*])');
+	    	const eightChar=new RegExp('(?=.{8,})');
+	    	 
+	    	 if (eightChar.test(data)) {
+	    	 	passchar[0].style.color = "green";
+	    	 	 
+	    	 	
+	    	 }else{
+
+	    	 	passchar[0].style.color = "gray";
+	    	 	flag=0;
+	    	 		
+	    	 	
+	    	 }
+	    	 if (lowerCase.test(data)) {
+	    	 	passchar[2].style.color="green";
+	    	 	flag=1;
+	    	 	
+	    	 }
+	    	 else{
+	    	 	 passchar[2].style.color="gray"; 
+	    	 	 flag=0;
+	    	 	
+	    	 
+	    	 }
+	    	 if (upperCase.test(data)) {
+	    	 	passchar[1].style.color="green"; flag=1;
+
+	    	 
+	    	 	
+	    	 }
+	    	 else{
+	    	 passchar[1].style.color="gray"; flag=0;
+	    	
+	    	
+	    	 }
+	    	 if (specialChar.test(data)) {
+	    	 	passchar[3].style.color="green"; flag=1;
+	    	 	
+	    	 	
+	    	 }
+	    	 else{ 
+	    	 	passchar[3].style.color="gray";flag=0; 
+	    	 
+	    	 }
+	    	 if (number.test(data)) {
+	    	 	 passchar[4].style.color="green";flag=1;
+
+	    	 	
+	    	 }
+	    	 else{ 
+	    	 	passchar[4].style.color="gray"; flag=0;
+	    	 
+	    	 	
+	    	 }
+	    	 	    }
+	    function validate(){
+	    	if (flag==1) {
+	    		return true;
+	    		
+	    	}else {
+	    		return false;
+	    		
+	    	}
+	    }
+	 
+	     
+	    	
+
+</script>
+</html>
