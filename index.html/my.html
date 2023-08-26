@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="text"  name="Name" placeholder="Username.." onkeyup="kol(this)">
+	<br>
+	<input type="" id="num" name="" placeholder="number..">
+	<br>
+	
+	<button onclick="log()">login</button>
+	<button onclick="sign()">signup</button>
+	<h1 id="result"></h1>
+
+</body>
+<script>
+	function kol(elem){
+		 if (isNaN(elem.value)) {
+		 document.getElementById('result').innerText="";
+
+		 }else{
+		 document.getElementById('result').innerText="only text";
+
+
+		 }
+
+	}
+	
+	function log(){
+		let te=document.getElementById('text').value;
+	   let ta=document.getElementById('num').value;
+		
+		if (te=="golu" || ta=="0000") {
+			
+			
+			
+				window.location.href="otp.html";
+			
+
+		}
+   else{
+ 	 alert("k");
+    }		
+
+		
+			
+		
+
+	}
+	function sign(){
+		 alert("sign");
+	}
+</script>
+</html>
